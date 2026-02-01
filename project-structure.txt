@@ -1,0 +1,70 @@
+.gitignore
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── │   vite.svg
+├── │   App.css
+├── │   App.jsx
+├── │   ErrorBoundary.jsx
+├── │   │   react.svg
+├── │   │   │   ElevationAnalysis.jsx
+├── │   │   │   EnhancedFarmMap.jsx
+├── │   │   │   FarmMap.jsx
+├── │   │   │   GpsTracking.jsx
+├── │   │   │   WeatherOverlay.jsx
+├── │   │   │   ZoneManager.jsx
+├── │   │   AuthContext.jsx
+├── │   │   SocketContext.jsx
+├── │   index.css
+├── │   main.jsx
+├── │   │   Dashboard.jsx
+├── │   │   MapDashboard.jsx
+├── │   │   MapDashboard.template.jsx
+├── │   │   TemplatesReference.jsx
+├── │   │   leaflet-draw.js
+├── │   │   │   index.js
+├── │   │   leaflet-markercluster.js
+├── │   │   │   index.js
+├── │   │   leaflet-routing-machine.js
+├── │   │   │   index.js
+├── │   │   enhanced-map.css
+├── │   │   map.css
+├── │   │   advancedMapUtils.js
+├── │   │   mapUtils.js
+├── tailwind.config.js
+├── vite.config.js
+package-lock.json
+package.json
+project-structure.txt
+├── .gitignore
+├── index.js
+├── package-lock.json
+├── package.json
+├── │   app.js
+├── │   │   db.js
+├── │   │   auth.controller.js
+├── │   │   sensor.controller.js
+├── │   │   ErrorResponse.js
+├── │   │   auth.js
+├── │   │   errorHandler.js
+├── │   │   Alert.model.js
+├── │   │   Farm.model.js
+├── │   │   Image.model.js
+├── │   │   IrrigationSchedule.model.js
+├── │   │   Sensor.model.js
+├── │   │   SensorReading.model.js
+├── │   │   User.model.js
+├── │   │   auth.routes.js
+├── │   │   farm.routes.js
+├── │   │   map.routes.js
+├── │   │   mqttService.js
+├── │   │   notificationService.js
+├── │   │   socketService.js
+├── │   │   weatherService.js
+├── │   │   asyncHandler.js
+├── │   │   geoUtils.js
+├── │   │   imageProcessor.js
+test-setup.js
