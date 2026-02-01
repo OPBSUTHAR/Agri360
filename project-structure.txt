@@ -1,5 +1,4 @@
 .gitignore
-README.md
 client/.gitignore
 client/README.md
 client/eslint.config.js
