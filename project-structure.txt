@@ -1,70 +1,70 @@
 .gitignore
-├── .gitignore
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── │   vite.svg
-├── │   App.css
-├── │   App.jsx
-├── │   ErrorBoundary.jsx
-├── │   │   react.svg
-├── │   │   │   ElevationAnalysis.jsx
-├── │   │   │   EnhancedFarmMap.jsx
-├── │   │   │   FarmMap.jsx
-├── │   │   │   GpsTracking.jsx
-├── │   │   │   WeatherOverlay.jsx
-├── │   │   │   ZoneManager.jsx
-├── │   │   AuthContext.jsx
-├── │   │   SocketContext.jsx
-├── │   index.css
-├── │   main.jsx
-├── │   │   Dashboard.jsx
-├── │   │   MapDashboard.jsx
-├── │   │   MapDashboard.template.jsx
-├── │   │   TemplatesReference.jsx
-├── │   │   leaflet-draw.js
-├── │   │   │   index.js
-├── │   │   leaflet-markercluster.js
-├── │   │   │   index.js
-├── │   │   leaflet-routing-machine.js
-├── │   │   │   index.js
-├── │   │   enhanced-map.css
-├── │   │   map.css
-├── │   │   advancedMapUtils.js
-├── │   │   mapUtils.js
-├── tailwind.config.js
-├── vite.config.js
+client/.gitignore
+client/README.md
+client/eslint.config.js
+client/index.html
+client/package-lock.json
+client/package.json
+client/public/vite.svg
+client/src/App.css
+client/src/App.jsx
+client/src/ErrorBoundary.jsx
+client/src/assets/react.svg
+client/src/components/map/ElevationAnalysis.jsx
+client/src/components/map/EnhancedFarmMap.jsx
+client/src/components/map/FarmMap.jsx
+client/src/components/map/GpsTracking.jsx
+client/src/components/map/WeatherOverlay.jsx
+client/src/components/map/ZoneManager.jsx
+client/src/context/AuthContext.jsx
+client/src/context/SocketContext.jsx
+client/src/index.css
+client/src/main.jsx
+client/src/pages/Dashboard.jsx
+client/src/pages/MapDashboard.jsx
+client/src/pages/MapDashboard.template.jsx
+client/src/pages/TemplatesReference.jsx
+client/src/shims/leaflet-draw.js
+client/src/shims/leaflet-draw/index.js
+client/src/shims/leaflet-markercluster.js
+client/src/shims/leaflet-markercluster/index.js
+client/src/shims/leaflet-routing-machine.js
+client/src/shims/leaflet-routing-machine/index.js
+client/src/styles/enhanced-map.css
+client/src/styles/map.css
+client/src/utils/advancedMapUtils.js
+client/src/utils/mapUtils.js
+client/tailwind.config.js
+client/vite.config.js
 package-lock.json
 package.json
 project-structure.txt
-├── .gitignore
-├── index.js
-├── package-lock.json
-├── package.json
-├── │   app.js
-├── │   │   db.js
-├── │   │   auth.controller.js
-├── │   │   sensor.controller.js
-├── │   │   ErrorResponse.js
-├── │   │   auth.js
-├── │   │   errorHandler.js
-├── │   │   Alert.model.js
-├── │   │   Farm.model.js
-├── │   │   Image.model.js
-├── │   │   IrrigationSchedule.model.js
-├── │   │   Sensor.model.js
-├── │   │   SensorReading.model.js
-├── │   │   User.model.js
-├── │   │   auth.routes.js
-├── │   │   farm.routes.js
-├── │   │   map.routes.js
-├── │   │   mqttService.js
-├── │   │   notificationService.js
-├── │   │   socketService.js
-├── │   │   weatherService.js
-├── │   │   asyncHandler.js
-├── │   │   geoUtils.js
-├── │   │   imageProcessor.js
+server/.gitignore
+server/index.js
+server/package-lock.json
+server/package.json
+server/src/app.js
+server/src/config/db.js
+server/src/controllers/auth.controller.js
+server/src/controllers/sensor.controller.js
+server/src/middleware/ErrorResponse.js
+server/src/middleware/auth.js
+server/src/middleware/errorHandler.js
+server/src/models/Alert.model.js
+server/src/models/Farm.model.js
+server/src/models/Image.model.js
+server/src/models/IrrigationSchedule.model.js
+server/src/models/Sensor.model.js
+server/src/models/SensorReading.model.js
+server/src/models/User.model.js
+server/src/routes/auth.routes.js
+server/src/routes/farm.routes.js
+server/src/routes/map.routes.js
+server/src/services/mqttService.js
+server/src/services/notificationService.js
+server/src/services/socketService.js
+server/src/services/weatherService.js
+server/src/utils/asyncHandler.js
+server/src/utils/geoUtils.js
+server/src/utils/imageProcessor.js
 test-setup.js
