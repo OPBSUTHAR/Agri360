@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+vendor/
+packages/
+
+# Build / output
+dist/
+build/
+out/
+target/
+
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Logs & temp
+logs/
+*.log
+tmp/
+.cache/
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Framework tools
+.vite/
+.next/
+.nuxt/
+coverage/
