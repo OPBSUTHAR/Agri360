@@ -1,0 +1,93 @@
+├── .gitignore
+├── README.md
+├── client
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── ErrorBoundary.jsx
+│   │   ├── assets
+│   │   │   └── react.svg
+│   │   ├── components
+│   │   │   └── map
+│   │   │       ├── ElevationAnalysis.jsx
+│   │   │       ├── EnhancedFarmMap.jsx
+│   │   │       ├── FarmMap.jsx
+│   │   │       ├── GpsTracking.jsx
+│   │   │       ├── WeatherOverlay.jsx
+│   │   │       └── ZoneManager.jsx
+│   │   ├── context
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── SocketContext.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
+│   │   ├── pages
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── MapDashboard.jsx
+│   │   │   ├── MapDashboard.template.jsx
+│   │   │   └── TemplatesReference.jsx
+│   │   ├── shims
+│   │   │   ├── leaflet-draw
+│   │   │   │   └── index.js
+│   │   │   ├── leaflet-draw.js
+│   │   │   ├── leaflet-markercluster
+│   │   │   │   └── index.js
+│   │   │   ├── leaflet-markercluster.js
+│   │   │   ├── leaflet-routing-machine
+│   │   │   │   └── index.js
+│   │   │   └── leaflet-routing-machine.js
+│   │   ├── styles
+│   │   │   ├── enhanced-map.css
+│   │   │   └── map.css
+│   │   └── utils
+│   │       ├── advancedMapUtils.js
+│   │       └── mapUtils.js
+│   ├── tailwind.config.js
+│   └── vite.config.js
+├── package-lock.json
+├── package.json
+├── project-structure.txt
+├── server
+│   ├── .gitignore
+│   ├── index.js
+│   ├── package-lock.json
+│   ├── package.json
+│   └── src
+│       ├── app.js
+│       ├── config
+│       │   └── db.js
+│       ├── controllers
+│       │   ├── auth.controller.js
+│       │   └── sensor.controller.js
+│       ├── middleware
+│       │   ├── ErrorResponse.js
+│       │   ├── auth.js
+│       │   └── errorHandler.js
+│       ├── models
+│       │   ├── Alert.model.js
+│       │   ├── Farm.model.js
+│       │   ├── Image.model.js
+│       │   ├── IrrigationSchedule.model.js
+│       │   ├── Sensor.model.js
+│       │   ├── SensorReading.model.js
+│       │   └── User.model.js
+│       ├── routes
+│       │   ├── auth.routes.js
+│       │   ├── farm.routes.js
+│       │   └── map.routes.js
+│       ├── services
+│       │   ├── mqttService.js
+│       │   ├── notificationService.js
+│       │   ├── socketService.js
+│       │   └── weatherService.js
+│       └── utils
+│           ├── asyncHandler.js
+│           ├── geoUtils.js
+│           └── imageProcessor.js
+└── test-setup.js
