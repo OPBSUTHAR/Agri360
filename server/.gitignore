@@ -2,11 +2,14 @@ coverage/
 logs/
 tmp/
 .cache/
-# Environment & secrets
+# Environment & secrets — NEVER commit .env
 .env
 .env.*
+!.env.example
 *.key
 *.pem
+*.p12
+*.pfx
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

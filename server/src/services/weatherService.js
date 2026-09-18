@@ -4,9 +4,14 @@ class WeatherService {
   constructor(apiKey) {
     this.apiKey = apiKey || process.env.WEATHER_API_KEY;
     this.baseUrl = 'https://api.openweathermap.org/data/2.5';
+    if (!this.apiKey || /your_.*_here/i.test(this.apiKey) || this.apiKey === 'CHANGE_ME') {
+      console.warn('⚠️  WEATHER_API_KEY not configured - WeatherService will return mock data only');
+      this.apiKey = null;
+    }
   }
 
   async getCurrentWeather(lat, lon) {
+    if (!this.apiKey) return this.getMockWeatherData(lat, lon);
     try {
       const response = await axios.get(`${this.baseUrl}/weather`, {
         params: {
@@ -19,12 +24,13 @@ class WeatherService {
       
       return this.formatWeatherData(response.data);
     } catch (error) {
-      console.error('Error fetching weather:', error);
+      console.error('Error fetching weather:', error.message);
       return this.getMockWeatherData(lat, lon);
     }
   }
 
   async getForecast(lat, lon) {
+    if (!this.apiKey) return this.getMockForecastData();
     try {
       const response = await axios.get(`${this.baseUrl}/forecast`, {
         params: {
@@ -37,7 +43,7 @@ class WeatherService {
       
       return this.formatForecastData(response.data);
     } catch (error) {
-      console.error('Error fetching forecast:', error);
+      console.error('Error fetching forecast:', error.message);
       return this.getMockForecastData();
     }
   }

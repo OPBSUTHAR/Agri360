@@ -75,6 +75,12 @@ UserSchema.pre('save', async function(next) {
 
 // Sign JWT and return
 UserSchema.methods.getSignedJwtToken = function() {
+  if (!process.env.JWT_SECRET) {
+    throw new Error('JWT_SECRET not configured - check server/.env');
+  }
+  if (!process.env.JWT_EXPIRE) {
+    throw new Error('JWT_EXPIRE not configured - check server/.env');
+  }
   return jwt.sign(
     { id: this._id, role: this.role },
     process.env.JWT_SECRET,

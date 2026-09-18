@@ -9,11 +9,16 @@ build/
 out/
 target/
 
-# Environment & secrets
+# Environment & secrets — NEVER commit .env
 .env
 .env.*
+!.env.example
+!**/.env.example
 *.key
 *.pem
+*.p12
+*.pfx
+secrets/
 
 # Logs & temp
 logs/

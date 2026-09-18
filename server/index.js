@@ -1,8 +1,11 @@
+require('dotenv').config();
+const { validateEnv } = require('./src/config/env');
+validateEnv();
+
 const app = require('./src/app');
 const connectDB = require('./src/config/db');
 const { setupMQTT } = require('./src/services/mqttService');
 const { setupSocketIO } = require('./src/services/socketService');
-require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 
